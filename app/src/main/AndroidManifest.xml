@@ -19,6 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".sample1.SampleActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".sample2.activities.SampleActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".sample2.activities.AddUserActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

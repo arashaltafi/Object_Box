@@ -1,4 +1,4 @@
-package com.arash.altafi.objectbox
+package com.arash.altafi.objectbox.sample1
 
 import android.content.Context
 import io.objectbox.Box

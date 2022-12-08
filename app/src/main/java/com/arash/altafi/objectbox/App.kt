@@ -6,7 +6,8 @@ class App: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        ObjectBox.init(this)
+        com.arash.altafi.objectbox.sample2.database.ObjectBox.init(this)
+        com.arash.altafi.objectbox.sample1.ObjectBox.init(this)
     }
 
 }

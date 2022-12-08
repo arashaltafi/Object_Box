@@ -1,4 +1,4 @@
-package com.arash.altafi.objectbox
+package com.arash.altafi.objectbox.sample1
 
 import io.objectbox.annotation.Entity
 import io.objectbox.annotation.Id
