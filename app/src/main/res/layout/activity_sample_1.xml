@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +10,7 @@
     tools:context=".sample1.SampleActivity1">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -16,83 +18,75 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp">
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="50dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/teal_700"
+                app:strokeWidth="2dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Object Box ..." />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_put"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
                 android:text="put" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_get"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:text="get id 1" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_get_above"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:text="get id Above 10" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_get_all"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:text="get all" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_remove"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:text="remove" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_remove_under"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:text="remove Under 10" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_remove_all"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:text="remove all" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_remove_all1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="remove all 1" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_remove_all11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="remove all 11" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_remove_all111"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="remove all 111" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_remove_all1111"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="remove all 1111" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

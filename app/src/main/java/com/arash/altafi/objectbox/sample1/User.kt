@@ -1,11 +1,12 @@
 package com.arash.altafi.objectbox.sample1
 
-import io.objectbox.annotation.Entity
-import io.objectbox.annotation.Id
+import io.objectbox.annotation.*
 
 @Entity
 data class User(
     @Id
     var id: Long = 0,
-    var name: String? = null
+
+//    @Index @Unique(onConflict = ConflictStrategy.REPLACE)
+    var username: String? = null
 )
